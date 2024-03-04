@@ -16,43 +16,57 @@
     />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="src/css/style.css" />
-    <link rel="stylesheet" href="src/css/reset.css" />
+    <link href="./src/css/output.css" rel="stylesheet" />
   </head>
-  <body>
-    <div class="app">
-      <header class="app__header">
-        <div class="app__header-logo">NADJA MARIA BEAUTY</div>
-        <nav class="app__header-navigation">
-          <ul class="app__header-navigation-list">
-            <li class="app__header-navigation-item">
-              <a href="#" class="app__header-navigation-link">Início</a>
+
+  <body class="w-full h-screen bg-black font-mont">
+    <header class="w-full">
+      <div
+        class="max-w-[1200px] mx-auto relative flex items-center justify-center pt-12"
+      >
+        <img
+          class="absolute left-0 w-40"
+          src="src/img/logo.jpg"
+          alt="Logo Nadja Maria Beauty"
+        />
+        <nav>
+          <ul class="flex items-center gap-12">
+            <li>
+              <a class="text-white" href="">Sobre</a>
             </li>
-            <li class="app__header-navigation-item">
-              <a href="#" class="app__header-navigation-link">Sobre nós</a>
+            <li>
+              <a class="text-white" href="">Serviços</a>
             </li>
-            <li class="app__header-navigation-item">
-              <a href="#" class="app__header-navigation-link">Serviços</a>
+            <li>
+              <a class="text-white" href="">Produtos</a>
             </li>
-            <li class="app__header-navigation-item">
-              <a href="#" class="app__header-navigation-link">Contatos</a>
+            <li>
+              <a class="text-white" href="">Contatos</a>
             </li>
           </ul>
         </nav>
-        <a href="#" class="app__header-button">
-          <span>
-            Agendar
-            <i class="fa-regular fa-clock"></i>
-          </span>
-        </a>
-      </header>
+        <a
+          class="absolute right-0 px-6 py-1.5 text-white rounded-full border-s-4 border-e-4"
+          href="#"
+          >Agende</a
+        >
+      </div>
+    </header>
 
-      <section class="app__home"></section>
-    </div>
+    <section class="w-full h-home">
+      <div class="max-w-[1200px] mx-auto relative h-full mt-20">
+        <img class="h-[95%] mx-auto" src="src/img/home.svg" alt="BEAUTY" />
 
+        <div class="absolute bottom-0 w-full h-3/4 bg-gradient-to-top"></div>
+        <div class="absolute bottom-0 w-full h-2/4 bg-gradient-to-top"></div>
+        <div class="absolute bottom-0 w-full h-2/4 bg-gradient-to-top"></div>
+      </div>
+    </section>
     <script
       src="https://kit.fontawesome.com/555bf53180.js"
       crossorigin="anonymous"
     ></script>
+
+    <script type="module" src="src/js/script.js"></script>
   </body>
 </html>

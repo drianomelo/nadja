@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.h-home {
+  height: calc(100vh - 80px - 72px);
+}
+
+.bg-gradient-to-top {
+  background: linear-gradient(to top, #000, transparent);
+}
